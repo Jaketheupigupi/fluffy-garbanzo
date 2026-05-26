@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    text-align: center;
+    line-height: 25px;
+}
+/*nav-bar*/
+.nav-bar{
+    background-color: #2E7D32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 8px;
+    position: sticky;
+    top: 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+.menu{
+    display: flex;
+}
+.menu li a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+.menu li a:hover{
+    background-color: darkkhaki;
+    border-radius: 7px;
+    padding: 7px;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px;
+    text-align: center;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(to right, #a7e2aa, #7fbddf , #a7e2aa );
+    height: 300px;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* FAQ SECTION */
+#faq {
+    background: #E8F5E9;
+    padding: 60px;
+}
+
+/* FAQ CONTAINER */
+.faq-container {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 30px;
+    gap: 30px;
+
+    max-width: 1200px;
+    margin: auto;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* IMAGE */
+.faq-image,
+.faq-questions {
+    flex: 1;
+}
+
+.faq-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* DROPDOWN QUESTIONS */
+.faq-questions details {
+    background: #F5F5F5;
+
+    border-radius: 10px;
+
+    padding: 15px;
+    margin-bottom: 15px;
+
+    transition: 0.3s;
+}
+
+/* QUESTION */
+.faq-questions summary {
+    list-style: none;
+
+    cursor: pointer;
+
+    font-weight: bold;
+    color: #2E7D32;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ANSWER */
+.faq-questions details p {
+    background: white;
+
+    border-left: 5px solid #2E7D32;
+
+    padding: 15px;
+    margin-top: 10px;
+
+    border-radius: 10px;
+
+    line-height: 1.6;
+}
+
+/* ARROW */
+.faq-questions summary::after {
+    content: ">";
+    transition: 0.3s;
+}
+
+.faq-questions details[open] summary::after {
+    transform: rotate(90deg);
+}
+footer {
+    background-color: #2E7D32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
